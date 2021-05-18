@@ -3,7 +3,10 @@
 body {
   overflow-x: hidden;
   font-family: "Roboto Mono", monospace;
+  height: 100%;
+  width: 100%;
   margin: 0;
+  padding: 0;
 }
 
 * {
@@ -144,6 +147,8 @@ form.example::after {
 form.example {
   margin: -20px 0;
 }
+
+/* HEADER */
 
 /* mobile styles */
 @media only screen and (max-width: 769px) {
