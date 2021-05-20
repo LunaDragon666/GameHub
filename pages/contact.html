@@ -15,66 +15,121 @@
 </head> 
 
 <body>
-   <main class="contact">
+   <!-- NAVIGATION BAR -->
+<nav class="menu-container">
+   <!-- burger menu -->
+   <input type="checkbox" aria-label="Toggle menu" />
+   <span></span>
+   <span></span>
+   <span></span>
+ 
+   <!-- logo -->
+   <a href="#" class="menu-logo">
+     <img src="../img/logo.png" alt="Gameconsole logo design"/>
+   </a>
+ 
+   <!-- main menu -->
+   <div class="menu">
+     <ul classs="links">
+       <li>
+         <a href="#">
+           Games
+         </a>
+       </li>
+       <li>
+         <a href="#" class="active">
+           News
+         </a>
+       </li>
+       <li>
+         <a href="#">
+           About
+         </a>
+       </li>
+       <li>
+         <a href="#">
+           Contact
+         </a>
+       </li>
+     </ul class="userprofile">
+     <ul>
+       <li>
+         <a href="#">
+            <i class="fas fa-user"></i>
+         </a>
+       </li>
+       <li>
+         <a href="#">
+            <i class="fas fa-heart"></i>
+         </a>
+       </li>
+       <li>
+         <a href="#">
+            <i class="fas fa-shopping-cart"></i>
+         </a>
+       </li>
+     </ul>
+   </div>
+ </nav>
 
-      <h1>Send us request</h1>
-      <p class="contxt">Hello!</p>
-      <p class="infotxt">
-         <span class="reqired">
+   <!-- CONTACT FORM -->
+   <form>
+         <h1>Leave us a request</h1>
+            <p class="form_paragraph">
+               Tell us what we can do for you and how to get in contact with you.
+            </p>
+            <p>
+               <span class="required">*</span> Must fill in
+            </p>
+
+      <div id="successfullMessage"></div>
+
+      <div class="form_column">
+        <!-- name -->
+        <label for="name">
+         Name 
+         <span class="required">
             *
          </span>
-         Required fields
-      </p>
-
-      <form>
-        <div class="form-wrapper">
-          <section class="contact_form">
-            <!-- required fields -->
-            <label for="name">
-               Name
-               <span class="reqired">
-                  *
-               </span>
-            </label>
-            <input type="text" id="name" name="name" placeholder="e.g. John Smith" />
-            <label for="email">
-               Email
-               <span class="reqired">
-                  *
-               </span>
-            </label>
-            <input type="email" id="email" name="Email" placeholder="example@gmail.com" />
-            <!-- optimal fields -->
-            <label for="phone">
-               Phone
-            </label>
-            <input type="phone" id="phone" name="phone" placeholder="+47 98 76 54 32" />
-            <label for="subject">
-               Subject
-            </label>
-            <select id="suboptions" name="suboptions">
-              <option value="Choose">Choose the message's subject name:</option>
-              <option value="Costumer">Costumer service</option>
-              <option value="Questions">Questions</option>
-              <option value="Technical">Technical support</option>
-              <option value="Other">
-                 Other request
-               </option>
+        </label>
+      <input type="text" name="name" id="name" placeholder="e.g. John Smith">
+        <!-- email -->
+        <label for="email">
+           Email 
+           <span class="required">
+              *
+            </span>
+         </label>
+        <input type="email" name="email" id="email" placeholder="example@gmail.com">
+        <!-- phone -->
+        <label for="the-phone">
+           Phone number
+         </label>
+        <input type="tel" name="phone" id="the-phone" placeholder="+47 98 76 54 32">
+        <!-- subject -->
+        <label for="subject">How can we help you?</label>
+            <select class="dropdown" name="theme" id="subject-theme">
+               <option value="selected">Choose</option>
+               <option value="web">I have questions about your products/services</option>
+               <option value="service">I want to contact the costumer service</option>
+               <option value="tech">I need to get in touch with tech support</option>
+               <option value="other">Something else</option>
             </select>
-          </section>
-          <section>
-            <label for="message">
-               Message
-               <span class="reqired">
-                  *
-               </span>
-            </label>
-            <textarea id="message" name="message" placeholder="What can we help you with?"></textarea>
-          </section>
-        </div>
-        <input type="submit" value="Send" class="cta_send" />
-      </form>
+      </div>
+      <div class="form_message">
+        <!-- message -->
+        <label for="message">
+           Message
+           <span class="required">
+            *
+          </span>
+         </label>
+        <textarea name="message" id="message"></textarea>
+        <!-- submit button -->
+        <input type="submit" value="Send">
+      </div>
+    </form>
 
-    </main>
+    <script src="../js/contact.js"></script>
 </body>
 </html>
