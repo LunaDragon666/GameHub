@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Gamehub | Home </title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <!-- icon imports -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <!-- font import -->
@@ -14,25 +15,66 @@
 </head> 
 
 <body>
-   <form class="contact_form">
-      <label class="form">
-         Name
-         <input name="name" id="name" placeholder="Ola Nordmann">
-      </label>
-      <label class="form">
-         Email
-         <input name="email" id="email" placeholder="example@gmail.com">
-      </label>
-   <div class="form_split">
-      <label class="form">
-         Phone
-         <input name="phone" id="phone" placeholder="+47 98 76 54 32">
-      </label>
-      <label class="form">
-         Subject
-         <input name="subject" id="subject" placeholder="costumer support">
-      </label>
-   </div>
-   </form>
+   <main class="contact">
+
+      <h1>Send us request</h1>
+      <p class="contxt">Hello!</p>
+      <p class="infotxt">
+         <span class="reqired">
+            *
+         </span>
+         Required fields
+      </p>
+
+      <form>
+        <div class="form-wrapper">
+          <section class="contact_form">
+            <!-- required fields -->
+            <label for="name">
+               Name
+               <span class="reqired">
+                  *
+               </span>
+            </label>
+            <input type="text" id="name" name="name" placeholder="e.g. John Smith" />
+            <label for="email">
+               Email
+               <span class="reqired">
+                  *
+               </span>
+            </label>
+            <input type="email" id="email" name="Email" placeholder="example@gmail.com" />
+            <!-- optimal fields -->
+            <label for="phone">
+               Phone
+            </label>
+            <input type="phone" id="phone" name="phone" placeholder="+47 98 76 54 32" />
+            <label for="subject">
+               Subject
+            </label>
+            <select id="suboptions" name="suboptions">
+              <option value="Choose">Choose the message's subject name:</option>
+              <option value="Costumer">Costumer service</option>
+              <option value="Questions">Questions</option>
+              <option value="Technical">Technical support</option>
+              <option value="Other">
+                 Other request
+               </option>
+            </select>
+          </section>
+          <section>
+            <label for="message">
+               Message
+               <span class="reqired">
+                  *
+               </span>
+            </label>
+            <textarea id="message" name="message" placeholder="What can we help you with?"></textarea>
+          </section>
+        </div>
+        <input type="submit" value="Send" class="cta_send" />
+      </form>
+
+    </main>
 </body>
 </html>
