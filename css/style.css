@@ -146,21 +146,21 @@ form.example::after {
 
 form.example {
   margin: -20px 0;
-  padding-bottom: 1.5em;
+  padding-bottom: 1.25em;
 }
 
 /* HEADER */
 
 /* CONTENT */
 .update {
-  padding: 1em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 15px;
+  grid-gap: 1px;
 }
 
 .news {
   width: 100%;
+  height: 56vh;
 }
 /* mobile styles */
 @media only screen and (max-width: 769px) {
@@ -207,6 +207,9 @@ form.example {
   }
   form.example input[type="text"] {
     padding: 10px 15px;
+  }
+  .update {
+    grid-template-columns: 1fr;
   }
 }
 
