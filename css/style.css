@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Roboto Mono", monospace;
@@ -7,10 +15,6 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -48,7 +52,7 @@ body {
 }
 
 .menu-container a:hover {
-  color: #bd10e0;
+  color: #e010c4;
 }
 
 .menu-container input {
@@ -179,7 +183,7 @@ form.example {
 }
 
 /* mobile styles */
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   a.active {
     text-decoration: underline;
     color: #bd10e0;
