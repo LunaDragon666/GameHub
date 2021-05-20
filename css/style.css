@@ -155,7 +155,7 @@ form.example {
 .update {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1px;
+  grid-gap: 5px;
 }
 
 .news {
@@ -167,7 +167,11 @@ form.example {
 .gameitem {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1px;
+  grid-gap: 10px 5px;
+}
+
+.gamefeature {
+  width: 100%;
 }
 
 /* mobile styles */
@@ -216,7 +220,8 @@ form.example {
   form.example input[type="text"] {
     padding: 10px 15px;
   }
-  .update {
+  .update,
+  .gameitem {
     grid-template-columns: 1fr;
   }
 }
