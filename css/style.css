@@ -146,10 +146,22 @@ form.example::after {
 
 form.example {
   margin: -20px 0;
+  padding-bottom: 1.5em;
 }
 
 /* HEADER */
 
+/* CONTENT */
+.update {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+
+.news {
+  width: 100%;
+}
 /* mobile styles */
 @media only screen and (max-width: 769px) {
   a.active {
