@@ -5,6 +5,7 @@ const firstName = document.querySelector("#name");
 const nameError = document.querySelector("#nameError");
 
 const email = document.querySelector("#email");
+const emailError = document.querySelector("#emailError");
 
 const formMessage = document.querySelector("#formMessage");
 const messageError = document.querySelector("#messageError");
@@ -17,6 +18,13 @@ function formRequirements() {
       nameError.style.display = "none";
    } else {
       nameError.style.display = "block";
+      error = true;
+   }
+
+   if (validateEmail(email.value) === true) {
+      emailError.style.display = "none";
+   } else {
+      emailError.style.display = "block";
       error = true;
    }
 
@@ -55,3 +63,13 @@ function formRequirements() {
       }
    }
 
+   function validateEmail(email) {
+      const reg = /\S+@\S+\.\S+/;
+      const patternMatches = reg.test(email);
+      return patternMatches;
+   }
+
+
+   function topPage() {
+      window.scrollTo(0, 120);
+  }
