@@ -1,11 +1,14 @@
 h1,
 p {
+  color: white;
   text-align: left;
   padding-left: 0;
 }
 
 form {
-  padding: 1px 25px 29px 25px;
+  background: #2d0681;
+  margin-top: -20px;
+  padding: 1px 25px 50px 25px;
 }
 
 .form_column {
@@ -13,6 +16,7 @@ form {
 }
 
 label {
+  color: white;
   display: block;
   margin: 1em 0 0.5em;
 }
@@ -42,7 +46,7 @@ select {
 
 option {
   color: white;
-  background: #404040;
+  background: #16043d;
   font-size: 16px;
 }
 
@@ -104,14 +108,16 @@ input[type="submit"]:focus {
   padding: 1rem;
   color: white;
   border-radius: 0.25em;
-  margin: 0;
+  margin: 2em 0 0 0;
   font-size: 0.85em;
 }
 
 @media screen and (min-width: 1024px) {
   h1,
   p {
+    color: white;
     padding-left: 15px;
+    padding-top: 10px;
   }
 
   .form-error {
@@ -126,7 +132,7 @@ input[type="submit"]:focus {
     padding: 1rem;
     color: white;
     border-radius: 0.25em;
-    margin: 1em 1em 0 1em;
+    margin: 2.5em 1em 0 1em;
     font-size: 1em;
   }
 
