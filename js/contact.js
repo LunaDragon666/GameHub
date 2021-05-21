@@ -38,12 +38,12 @@ function formRequirements() {
       const requirements = formRequirements();
 
       if(!requirements) {
-         message.innerHTML = '<div class="message">Message sent</div>';
+         message.innerHTML = '<div class="message">The message has been sent successfully! We will respond to you as soon as possible, within 24 hours during our working buisness days. Stay turned!</div>';
       } 
 
    form.focus();
    }
-   
+
 
    form.addEventListener("submit", submitForm);
 
