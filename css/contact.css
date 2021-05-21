@@ -95,14 +95,39 @@ input[type="submit"]:focus {
 .form-error {
   display: none;
   color: #ff009f;
-  margin-top: -25px;
-  margin-bottom: 5px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.message {
+  background: #27beac;
+  padding: 1rem;
+  color: white;
+  border-radius: 0.25em;
+  margin: 0;
+  font-size: 0.85em;
 }
 
 @media screen and (min-width: 1024px) {
   h1,
   p {
     padding-left: 15px;
+  }
+
+  .form-error {
+    display: none;
+    color: #ff009f;
+    margin-top: -25px;
+    margin-bottom: 5px;
+  }
+
+  .message {
+    background: #27beac;
+    padding: 1rem;
+    color: white;
+    border-radius: 0.25em;
+    margin: 1em 1em 0 1em;
+    font-size: 1em;
   }
 
   /*  2 column form */
