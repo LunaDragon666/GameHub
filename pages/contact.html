@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Gamehub | Home </title>
+    <title> Gamehub | Contact </title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/contact.css">
     <!-- icon imports -->
@@ -24,7 +24,7 @@
    <span></span>
  
    <!-- logo -->
-   <a href="#" class="menu-logo">
+   <a href="../pages/index.html" class="menu-logo">
      <img src="../img/logo.png" alt="Gameconsole logo design"/>
    </a>
  
@@ -37,7 +37,7 @@
          </a>
        </li>
        <li>
-         <a href="#" class="active">
+         <a href="../pages/index.html">
            News
          </a>
        </li>
@@ -47,7 +47,7 @@
          </a>
        </li>
        <li>
-         <a href="#">
+         <a href="#"class="active">
            Contact
          </a>
        </li>
@@ -73,20 +73,23 @@
  </nav>
 
    <!-- CONTACT FORM -->
-   <form>
+   <form id="contactForm">
          <h1>Leave us a request</h1>
             <p class="form_paragraph">
-               Tell us what we can do for you and how to get in contact with you.
+               Please tell us what we can do for you and how to get in contact with you!
             </p>
             <p>
                <span class="required">*</span> Must fill in
             </p>
 
-      <div id="successfullMessage"></div>
+      <div id="messageConfirmed"></div>
 
       <div class="form_column">
         <!-- name -->
-        <label for="name">
+        <label for="name">         
+           <span class="form-error" id="nameError">
+              &#10060; You must enter your name &#10060;
+            </span>
          Name 
          <span class="required">
             *
@@ -119,12 +122,15 @@
       <div class="form_message">
         <!-- message -->
         <label for="message">
+         <span class="form-error" id="messageError">
+            &#10060; Your message text must contain at least 25 letter characters &#10060;
+          </span>
            Message
            <span class="required">
             *
           </span>
          </label>
-        <textarea name="message" id="message"></textarea>
+        <textarea name="message" id="formMessage" placeholder="Tell us more about your request"></textarea>
         <!-- submit button -->
         <input type="submit" value="Send">
       </div>
