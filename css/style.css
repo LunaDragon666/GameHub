@@ -69,7 +69,7 @@ body {
 
 a.active {
   text-decoration: underline;
-  color: #bd10e0;
+  text-underline-offset: 0.5em;
 }
 
 /* Burger menu */
