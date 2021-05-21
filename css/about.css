@@ -17,7 +17,7 @@
   width: 50%;
 }
 
-.aboutus {
+.about-us {
   margin-top: -20px;
 }
 
@@ -34,9 +34,38 @@ h1 {
   font-size: 2em;
 }
 
+h2 {
+  padding: 2.5em;
+  text-align: center;
+}
+
 p {
   font-family: "Rubik", sans-serif;
   font-size: 1.2em;
   letter-spacing: 0.05em;
   line-height: 1.5em;
+}
+
+.our-services {
+  background: #2e0a7d;
+  height: 60vh;
+  margin-top: -20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.flex1,
+.flex2,
+.flex3 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  text-align: center;
+}
+
+.icons {
+  width: 15%;
 }
