@@ -9,7 +9,7 @@
 .image {
   background: url("../img/gamecommunity.jpg") center bottom no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 56vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -26,15 +26,12 @@
   width: 50%;
 }
 
-.dec {
-  color: #b515d5;
-}
-
 h1 {
   font-size: 2em;
 }
 
 h2 {
+  margin-bottom: -5px;
   padding: 2.5em;
   text-align: center;
 }
@@ -47,8 +44,8 @@ p {
 }
 
 .our-services {
-  background: #2e0a7d;
-  height: 60vh;
+  background: #3a0d9b;
+  height: 57.6vh;
   margin-top: -20px;
 }
 
