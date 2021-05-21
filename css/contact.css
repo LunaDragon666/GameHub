@@ -29,6 +29,7 @@ textarea {
   border: solid 1px #ccc;
   resize: vertical;
   font-family: "Roboto Mono", monospace;
+  border-radius: 0.25em;
 }
 
 textarea {
@@ -41,7 +42,7 @@ select {
 
 option {
   color: white;
-  background: black;
+  background: #404040;
   font-size: 16px;
 }
 
@@ -58,6 +59,12 @@ input[type="submit"] {
   color: white;
   border: none;
   transition: all 0.3s ease-out;
+}
+
+input[type="submit"]:hover {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.25em;
 }
 
 input:focus,
@@ -83,6 +90,13 @@ input[type="submit"]:focus {
 .required {
   font-weight: bold;
   color: #bd10e0;
+}
+
+.form-error {
+  display: none;
+  color: #ff009f;
+  margin-top: -25px;
+  margin-bottom: 5px;
 }
 
 @media screen and (min-width: 1024px) {
