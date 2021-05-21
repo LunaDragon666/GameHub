@@ -98,6 +98,9 @@
       <input type="text" name="name" id="name" placeholder="e.g. John Smith">
         <!-- email -->
         <label for="email">
+         <span class="form-error" id="emailError">
+            &#10060; Please enter a valid email &#10060;
+          </span>
            Email 
            <span class="required">
               *
@@ -130,9 +133,9 @@
             *
           </span>
          </label>
-        <textarea name="message" id="formMessage" placeholder="Tell us more about your request"></textarea>
+        <textarea name="message" id="formMessage" placeholder="What's the request about?"></textarea>
         <!-- submit button -->
-        <input type="submit" value="Send">
+        <input onclick="topPage()" type="submit" value="Send">
       </div>
     </form>
 
