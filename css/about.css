@@ -1,0 +1,42 @@
+.flexbox {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  background: #4618ac;
+}
+
+.image {
+  background: url("../img/gamecommunity.jpg") center bottom no-repeat;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.aboutus {
+  margin-top: -20px;
+}
+
+.content {
+  padding: 2.5em 5em;
+  width: 50%;
+}
+
+.dec {
+  color: #b515d5;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+}
