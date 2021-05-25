@@ -3,4 +3,4 @@ console.log(cartArray);
 
 cartArray.forEach(function(products) {
 
-}); */
+}); */ 
