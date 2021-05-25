@@ -295,6 +295,7 @@ form.example {
   display: inline-block;
   font-size: 2em;
   font-weight: bold;
+  letter-spacing: 0.15em;
 }
 
 .wishbtn {
@@ -310,6 +311,7 @@ h3 {
 
 .productdesc {
   color: white;
+  letter-spacing: 0.25em;
   font-weight: bold;
   margin-top: -1.25em;
 }
@@ -333,6 +335,7 @@ a {
 .oldprice {
   color: #bd10e0;
   font-size: 1.5em;
+  letter-spacing: 0.15em;
   margin: 0;
   text-decoration: line-through;
 }
