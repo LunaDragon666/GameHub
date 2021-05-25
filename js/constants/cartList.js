@@ -1,4 +1,4 @@
-export const cartArray = [
+/* export const cartArray = [
    {
       name: "Cyberpunk 2077",
       genre: "RPG",
@@ -7,4 +7,4 @@ export const cartArray = [
       id: "1",
       price: "$57.95",
    }
-];
+]; */
