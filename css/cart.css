@@ -3,8 +3,8 @@ a.checkout {
 }
 
 .cart {
-  background: aliceblue;
-  border: 1px solid rgb(255, 0, 179);
+  background: #e010d4;
+  border: none;
   max-width: 600px;
   min-width: 250px;
   padding: 20px;
@@ -12,4 +12,5 @@ a.checkout {
   position: fixed;
   right: 0;
   top: 101px;
+  display: none;
 }
