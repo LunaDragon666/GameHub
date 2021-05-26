@@ -5,176 +5,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Gamehub | Home </title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/cart.css">
-    <!-- icon imports -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <!-- font imports -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/cart.css">
+      <!-- icon imports -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <!-- font imports -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
 </head> 
 
 <body>
-<!-- NAVIGATION BAR -->
-<nav class="menu-container">
-   <!-- burger menu -->
-   <input type="checkbox" aria-label="Toggle menu" />
-   <span></span>
-   <span></span>
-   <span></span>
- 
-   <!-- logo -->
-   <a href="../pages/index.html" class="menu-logo">
-     <img src="../img/logo.png" alt="Gameconsole logo design"/>
-   </a>
- 
-   <!-- main menu -->
-   <div class="menu">
-     <ul classs="links">
-       <li>
-         <a href="#">
-           Games
-         </a>
-       </li>
-       <li>
-         <a href="../pages/index.html" class="active">
-           News
-         </a>
-       </li>
-       <li>
-         <a href="../pages/about.html">
-           About
-         </a>
-       </li>
-       <li>
-         <a href="../pages/contact.html">
-           Contact
-         </a>
-       </li>
-     </ul class="userprofile">
-     <ul>
-       <li>
-         <a href="#">
-            <i class="fas fa-user"></i>
-         </a>
-       </li>
-       <li>
-         <a href="#">
-            <i class="fas fa-heart"></i>
-         </a>
-       </li>
-       <li>
-         <a href="#">
-            <i class="fas fa-shopping-cart"></i>
-         </a>
-       </li>
-     </ul>
-   </div>
- </nav>
-
- <!-- SEARCH BAR -->
- <form class="example">
-   <input type="text" placeholder="Browse games ..." name="search">
-      <button type="submit">
-         <i class="fa fa-search"></i>
-      </button>
- </form>
-
-  <!-- shopping cart -->
-  <div class="products"></div>
-  <div class="cart">
-    <div class="cart-list"></div>
-    <div class="total">Total:</div>
-    <a href="checkout.html" class="checkout">Checkout</a>
-  </div>
-
-  <!-- CONTENT -->
-  <section class="update">
-    <article class="coming_games">
-      <a href="#">
-        <img class="news" src="../img/2021games.jpg" alt="#">
+  <!-- NAVIGATION BAR -->
+  <nav class="menu-container">
+     <!-- burger menu -->
+     <input type="checkbox" aria-label="Toggle menu">
+     <span></span>
+     <span></span>
+     <span></span>
+   
+     <!-- logo -->
+     <a href="../pages/index.html" class="menu-logo">
+       <img src="../img/logo.png" alt="Gameconsole logo design">
+     </a>
+   
+     <!-- main menu -->
+     <div class="menu">
+       <ul classs="links">
+      
+             <li>
+           <a href="#saletag">
+             Sale
+           </a>
+         </li>
+         
+         <li>
+           <a href="../pages/index.html" class="active">
+             News
+           </a>
+         </li>
+         <li>
+           <a href="../pages/about.html">
+             About
+           </a>
+         </li>
+         <li>
+           <a href="../pages/contact.html">
+             Contact
+           </a>
+         </li>
+       </ul>
+       <ul class="user-links">
+         <li>
+           <a href="#">
+              <i class="fas fa-user"></i>
+           </a>
+         </li>
+         <li>
+           <a href="#">
+              <i class="fas fa-heart"></i>
+           </a>
+         </li>
+         <li>
+           <a href="#">
+              <i class="fas fa-shopping-cart"></i>
+           </a>
+         </li>
+       </ul>
+     </div>
+   </nav>
+  
+   <!-- SEARCH BAR -->
+   <form class="example">
+     <input type="text" placeholder="Browse games ..." name="search">
+        <button type="submit">
+           <i class="fa fa-search"></i>
+        </button>
+   </form>
+  
+    <!-- shopping cart -->
+    <div class="products"></div>
+    <div class="cart">
+      <div class="cart-list"></div>
+      <div class="total">Total:</div>
+      <a href="checkout.html" class="checkout">Checkout</a>
+    </div>
+  
+    <!-- CONTENT -->
+    <section class="update">
+      <article class="coming_games">
+          <img class="news" src="../img/2021games.jpg" alt="#">
+          <div class="text-block">
+            <h2>Upcoming games 2021</h2>
+              <a class="cta" href="#">Preview</a>
+          </div>
+      </article>
+  
+      <article class="gamesale">
+          <img class="news" src="../img/gamecommunity.jpg" alt="#">
+  
+      </article>
+    </section>
+  
+    <!-- FEATURED -->
+    <section class="gameshop_preview">
+      <div class="heading"><h1><i class="fas fa-gamepad" id="gameicon"></i>Newest releases</h1>
+          
+          <div class="right-align">
+      <a class="headingbtn" href="#">Gameshop <i class="fas fa-angle-right"></i></a>
+      </div>
+          </div>
+          
+          <div class="gameitem">
+          
+            <div class="game">
+              <a class="wishbtn" href="#"><i class="fas fa-heart"></i></a>
+      <img class="gamefeature" src="../img/gamefeature.jpg" alt="cyberpunk2077">
+          <div class="box">
+        <h3>Cyberpunk</h3>
+        <p class="productdesc">2077</p>
+          <div class="shoptag">
+        <p class="price">$37.95</p>
+        <a class="buybtn" href="#"><i class="fas fa-cart-plus"></i>
       </a>
-    </article>
-    <article class="gamesale">
-      <a href="#">
-        <img class="news" src="../img/gamecommunity.jpg" alt="#">
+          </div>
+          </div>
+            </div>
+          
+            <div class="game">
+              <a class="wishbtn" href="#"><i class="fas fa-heart"></i></a>
+              <img class="gamefeature" src="../img/gamefeature1.jpg" alt="cyberpunk2077">
+                 <div class="box">
+        <h3>Assassin's Creed</h3>
+        <p class="productdesc">Valhalla</p>
+          <div class="shoptag">
+        <p class="price">$48.97</p>
+        <a class="buybtn" href="#"><i class="fas fa-cart-plus"></i>
       </a>
-    </article>
-  </section>
+          </div>
+          </div>
+            </div>
+          
+            <div class="game">
+              <a class="wishbtn" href="#"><i class="fas fa-heart"></i></a>
+              <img class="gamefeature" src="../img/gamefeature2.jpg" alt="cyberpunk2077">
+                           <div class="box">
+        <h3>Watch Dogs</h3>
+        <p class="productdesc">Legion</p>
+          <div class="shoptag">
+        <p class="price">$27.64</p>
+        <a class="buybtn" href="#"><i class="fas fa-cart-plus"></i>
+      </a>
+          </div>
+          </div>
+            </div>
+          
+            <div class="game">
+              <a class="wishbtn" href="#"><i class="fas fa-heart"></i></a>
+              <img class="gamefeature" src="../img/gamefeature3.jpg" alt="cyberpunk2077">
+              <div class="saletag" id="saletag">-69% OFF</div>
+                           <div class="box">
+        <h3>Mortal Kombat 11</h3>
+        <p class="productdesc">Ultimate bundle</p>
+          <div class="shoptag">
+        <p class="price">$12.45</p>
+        <a class="buybtn" href="#"><i class="fas fa-cart-plus"></i>
+      </a>
+          </div>
+        <p class="oldprice">$39.60</p>
+          </div>
+            </div>
+      
+          </div>
+        </section>
+  
+     <!-- <script src="../js/cart.js" type="module"></script> -->
 
-  <!-- FEATURED -->
-  <section class="gameshop_preview">
-    <div class="gameitem">
-    
-      <div class="game">
-        
-<img class="gamefeature" src="../img/gamefeature.jpg" alt="cyberpunk2077">
-    <div class="box">
-  <h3>Cyberpunk</h3>
-  <p class="productdesc">2077</p>
-    <div class="shoptag">
-  <p class="price">$57.95</p>
-  <a class="buybtn" href="#"><i class="fas fa-cart-plus"></i>
-</a>
-    </div>
-    </div>
-      </div>
-    
-      <div class="game">
-        <img class="gamefeature" src="../img/gamefeature1.jpg" alt="cyberpunk2077">
-           <div class="box">
-  <h3>Assassin's Creed</h3>
-  <p class="productdesc">Valhalla</p>
-    <div class="shoptag">
-  <p class="price">$81.93</p>
-  <a class="buybtn" href="#"><i class="fas fa-cart-plus"></i>
-</a>
-    </div>
-    </div>
-      </div>
-    
-      <div class="game">
-        <img class="gamefeature" src="../img/gamefeature2.jpg" alt="cyberpunk2077">
-                     <div class="box">
-  <h3>Watch Dogs</h3>
-  <p class="productdesc">Legion</p>
-    <div class="shoptag">
-  <p class="price">$69.78</p>
-  <a class="buybtn" href="#"><i class="fas fa-cart-plus"></i>
-</a>
-    </div>
-    </div>
-      </div>
-    
-      <div class="game">
-        <img class="gamefeature" src="../img/gamefeature3.jpg" alt="cyberpunk2077">
-        <div class="saletag">-69% OFF</div>
-                     <div class="box">
-  <h3>Mortal Kombat 11</h3>
-  <p class="productdesc">Ultimate bundle</p>
-    <div class="shoptag">
-  <p class="price">$12.45</p>
-  <a class="buybtn" href="#"><i class="fas fa-cart-plus"></i>
-</a>
-    </div>
-  <p class="oldprice">$39.60</p>
-    </div>
-      </div>
-
-    </div>
-  </section>
-
-   <!-- <script src="../js/cart.js" type="module"></script> -->
-
-</body>
+  </body>
  </html> 
-
- <!-- <div class="box"><a href="#"></a><a href="#">
-  <h3>Assassin's Creed: Valhalla</h3>
-  <p class="productdesc">RPG | Dec 2020</p>
-  <p class="price">$57.95</p>
-  </a><a class="buybtn" href="#"><i class="fas fa-cart-plus"></i>
-</a></div> -->
