@@ -344,11 +344,11 @@ a {
 .saletag {
   background: #e010d4;
   color: white;
-  display: inline-block;
   font-weight: bold;
   letter-spacing: 0.25em;
+  margin-top: -3.52em;
   padding: 1em;
   position: absolute;
   text-align: center;
-  width: 24.75%;
+  width: 10%;
 }
