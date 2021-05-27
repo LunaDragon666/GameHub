@@ -149,7 +149,7 @@ a.wishbtn:hover {
 }
 
 /* MEDIA QUERIES ~ mobile & smart phones */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
   .cart {
     min-width: 300px;
     top: 67px;
