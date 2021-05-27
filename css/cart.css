@@ -15,7 +15,6 @@ a.checkout {
 }
 
 /* FEATURED GAMESHOP */
-
 .heading {
   margin-top: -75px;
 }
@@ -27,25 +26,7 @@ a.checkout {
   transform: translateY(-140%);
 }
 
-.gameitem {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 15px;
-  padding: 0 15px;
-}
-
-.gamefeature {
-  width: 100%;
-  height: 500px;
-}
-
-.game {
-  position: relative;
-  box-shadow: rgb(7 7 7 / 10%) 0px 1px 1px 0px inset,
-    rgb(22 22 83 / 25%) 0px 50px 100px -20px,
-    rgb(0 0 0 / 30%) 0px 30px 60px -30px;
-}
-
+/* Gameshop button ~ right aligned "next" to the heading */
 a.headingbtn {
   display: inline-block;
   text-decoration: none;
@@ -64,6 +45,49 @@ a.headingbtn:hover {
   transition: 0.5s;
 }
 
+/* GAMESHOP PREVIEW SECTION */
+.gameitem {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  padding: 0 15px;
+}
+
+.game {
+  position: relative;
+  box-shadow: rgb(7 7 7 / 10%) 0px 1px 1px 0px inset,
+    rgb(22 22 83 / 25%) 0px 50px 100px -20px,
+    rgb(0 0 0 / 30%) 0px 30px 60px -30px;
+}
+
+/* Wish button */
+a.wishbtn {
+  background: #e010d4;
+  display: inline-block;
+  border-radius: 15px 0 15px 15px;
+  font-size: 1.75em;
+  padding: 0.25em 0.5em;
+  position: absolute;
+  right: 0;
+  transition: 1s;
+  box-shadow: rgb(0 0 0 / 9%) 0px 2px 1px, rgb(0 0 0 / 9%) 0px 4px 2px,
+    rgb(0 0 0 / 9%) 0px 8px 4px, rgb(0 0 0 / 9%) 0px 16px 8px,
+    rgb(0 0 0 / 9%) 0px 32px 16px;
+}
+
+a.wishbtn:hover {
+  background: white;
+  color: #df01ab;
+  transition: 1s;
+}
+
+/* Game product images */
+.gamefeature {
+  width: 100%;
+  height: 500px;
+}
+
+/* Saletag ~ Gameshop */
 .saletag {
   background: #e010d4;
   color: white;
@@ -76,6 +100,7 @@ a.headingbtn:hover {
   box-shadow: #07053f 1px 1px 7px 3px;
 }
 
+/* Game product(s) ~ details */
 .box {
   background: linear-gradient(0deg, #07053f 50%, rgb(11 6 86) 100%);
   height: 13.5em;
@@ -83,6 +108,7 @@ a.headingbtn:hover {
   padding: 0.25em 2em;
 }
 
+/* Game product name and sub-title(s) or product detail */
 .productdesc {
   color: white;
   letter-spacing: 0.25em;
@@ -95,6 +121,7 @@ a.headingbtn:hover {
   margin-top: 1.5em;
 }
 
+/* Price tag */
 .price {
   margin: 0;
   display: inline-block;
@@ -103,6 +130,7 @@ a.headingbtn:hover {
   letter-spacing: 0.15em;
 }
 
+/* Add to cart ~ button */
 .buybtn {
   background: #e010d4;
   border: none;
@@ -119,3 +147,53 @@ a.headingbtn:hover {
   background: #df0077;
   transition: 0.5s;
 }
+
+/* MEDIA QUERIES ~ mobile & smart phones */
+@media only screen and (max-width: 768px) {
+  .cart {
+    min-width: 300px;
+    top: 67px;
+  }
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: -5px;
+  }
+  h3 {
+    font-size: 1.4em;
+  }
+  .right-align {
+    position: relative;
+    right: -5%;
+    transform: translateY(0%);
+  }
+  a.headingbtn {
+    margin: 25px 0;
+  }
+  .gameitem {
+    grid-template-columns: 1fr;
+  }
+  .gamefeature {
+    height: 65%;
+  }
+  .box {
+    height: 20em;
+  }
+  .productdesc {
+    font-size: 1.2em;
+    margin-bottom: -40px;
+    margin-top: -0.75em;
+  }
+  .price {
+    display: block;
+    margin: 60px 0;
+  }
+  .oldprice {
+    margin: -80px 0;
+  }
+  .buybtn {
+    float: none;
+    padding: 1em 9em;
+  }
+}
+
+/* MEDIA QUERIES ~ tablets */
