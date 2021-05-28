@@ -1,18 +1,36 @@
-a.checkout {
-  color: black;
-}
-
 .cart {
   background: #e010d4;
   border: none;
   max-width: 600px;
   min-width: 250px;
-  padding: 20px;
+  padding: 30px;
   margin: auto;
   position: fixed;
   right: 0;
   top: 84px;
-  display: none;
+  display: block;
+  /* display: none; */
+}
+
+.cart-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.total {
+  margin-bottom: 25px;
+}
+
+a.checkout {
+  background: #550028;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.2em;
 }
 
 /* FEATURED GAMESHOP */
