@@ -2,29 +2,29 @@
    {
       name: "Cyberpunk",
       title: "2077",
-      image: "./img/gamefeature.jpg",
+      image: "./img/cyberpunk2077.jpg",
       id: "1",
-      price: "$57.95",
+      price: "$37.95",
    },
    {
       name: "Assassin's Creed",
       title: "Valhalla",
-      image: ".img/gamefeature1.jpg",
+      image: ".img/assassinscreed-valhalla.jpg",
       id: "2",
-      price: "$57.95",
+      price: "$48.97",
    },
    {
       name: "Watch Dogs",
       title: "Legion",
-      image: ".img/gamefeature2.jpg",
+      image: ".img/watchdogs-legion.jpg",
       id: "3",
-      price: "$57.95",
+      price: "$27.64",
    },
    {
       name: "Mortal Kombat 11",
       title: "Ultimate bundle",
-      image: ".img/gamefeature3.jpg",
+      image: ".img/mortalkombat11.jpg",
       id: "4",
-      price: "$57.95",
+      price: "$12.45",
    }
 ]; */ 
