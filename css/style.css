@@ -476,3 +476,12 @@ i.fab.fa-twitch {
   padding-bottom: 2em;
   text-align: center;
 }
+
+h5 {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+h6 {
+  padding-top: 10px;
+}
