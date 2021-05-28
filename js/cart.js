@@ -21,8 +21,9 @@ cartArray.forEach(function(product) {
 const buttons = document.querySelectorAll(".buybtn");
 buttons.forEach(function(button) {
     button.onclick = (function (event) {
-        console.log(event.target.dataset);
-        const itemToAdd = cartArray.find(item => item.id === event.target.dataset.product);
+        const id = event.target.dataset.id;
+        const itemToAdd = cartArray.find(item => item.id === id);
+
         cartArray.push(itemToAdd);
         showCart(cartArray);
         localStorage.setItem("cartList", JSON.stringify(cartArray));
