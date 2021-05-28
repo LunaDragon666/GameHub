@@ -1,3 +1,4 @@
+// FEATURED GAMESHOP
 import { gameList } from "./constants/gameList.js";
 
 const gameContainer = document.querySelector(".gameitem");
@@ -19,5 +20,7 @@ gameList.forEach(game => {
             </div>
         </div>
     `;
-    
+
 });
+
+// . 
