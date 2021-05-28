@@ -11,6 +11,7 @@
   /* display: block; */
   display: none;
   flex-direction: column;
+  z-index: 100;
 }
 
 .cart-image {
