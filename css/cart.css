@@ -1,26 +1,39 @@
 .cart {
   background: #e010d4;
   border: none;
-  max-width: 600px;
   min-width: 250px;
-  padding: 10px 30px;
+  max-width: 300px;
+  padding: 0 30px;
   margin: auto;
   position: fixed;
   right: 0;
   top: 0;
-  /* display: block; */
   display: none;
   flex-direction: column;
   z-index: 100;
 }
 
+.cart-item {
+  background: white;
+  padding: 0 15px;
+  height: 190px;
+}
+
+.cart-detail {
+  font-size: 0.75em;
+  margin-top: -20px;
+}
+
 .cart-image {
   width: 50px;
-  height: 70px;
+  height: 75px;
   background-size: cover;
+  margin-bottom: -10px;
 }
 
 .total {
+  font-weight: bold;
+  margin-top: 25px;
   margin-bottom: 25px;
 }
 
@@ -172,7 +185,6 @@ a.wishbtn:hover {
 @media only screen and (max-width: 500px) {
   .cart {
     min-width: 300px;
-    top: 67px;
   }
   h1 {
     font-size: 1.5em;
