@@ -1,11 +1,10 @@
 .cart {
-  background: #e010d4;
+  background: #9733ee;
   border: none;
-  min-width: 250px;
-  max-width: 300px;
-  padding: 0 30px;
-  margin: auto;
-  position: fixed;
+  min-width: 25%;
+  max-width: 50%;
+  padding: 0 15px;
+  position: absolute;
   right: 0;
   top: 0;
   display: none;
@@ -16,12 +15,13 @@
 .cart-item {
   background: white;
   padding: 0 15px;
-  height: 190px;
+  height: 150px;
+  margin-bottom: -25px;
 }
 
 .cart-detail {
   font-size: 0.75em;
-  margin-top: -20px;
+  margin-top: -35px;
 }
 
 .cart-image {
@@ -31,20 +31,37 @@
   margin-bottom: -10px;
 }
 
-.total {
+.p {
   font-weight: bold;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  background: #dcb6fd;
+  padding: 5px 45px;
+  float: right;
+}
+
+.cart-price {
+  float: right;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-right: 5px;
+  font-size: 1.4em;
+}
+
+.total {
+  font-weight: normal;
+  margin-top: 5px;
+  margin-bottom: 30px;
 }
 
 a.checkout {
-  background: #550028;
+  background: #df0077;
   color: white;
-  margin-top: 0;
+  margin-top: -10px;
+  margin-bottom: 20px;
   padding: 10px 15px;
   text-align: center;
   font-weight: bold;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
 }
 
 /* FEATURED GAMESHOP */
@@ -184,7 +201,10 @@ a.wishbtn:hover {
 /* MEDIA QUERIES ~ mobile & smart phones */
 @media only screen and (max-width: 500px) {
   .cart {
-    min-width: 300px;
+    min-width: 100%;
+  }
+  .p {
+    padding: 5px 40px;
   }
   h1 {
     font-size: 1.5em;
