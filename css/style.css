@@ -478,10 +478,16 @@ i.fab.fa-twitch {
 }
 
 h5 {
+  color: #0e0c2d;
   font-size: 1em;
-  margin-bottom: 0;
+  margin-bottom: -25px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 h6 {
+  color: #0e0c2d;
+  font-size: 1em;
   padding-top: 10px;
 }
