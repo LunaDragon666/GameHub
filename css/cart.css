@@ -10,6 +10,7 @@
   top: 84px;
   /* display: block; */
   display: none;
+  flex-direction: column;
 }
 
 .cart-image {
