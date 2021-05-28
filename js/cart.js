@@ -1,4 +1,4 @@
-/* import { cartArray } from "./js/constants/cartList.js";
+import { cartArray } from "./js/constants/cartList.js";
 console.log(cartArray);
 
 const productsContainer = document.querySelector(".products");
@@ -29,7 +29,7 @@ buttons.forEach(function(button){
 
       console.log(cartArray);
    }
-})
+});
 
 function showCart(cartItems) {
    cart.style.display = "block";
@@ -46,4 +46,4 @@ function showCart(cartItems) {
       `
    })
 totalContainer.innerHTML = `Total: ${total}`;
-}*/ 
+}
