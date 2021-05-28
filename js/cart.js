@@ -6,17 +6,17 @@ const cart = document.querySelector(".cart");
 const cartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total");
 
-cartArray.forEach(function(product) {
-   productsContainer.innerHTML +=
-   `
-   <div class="product">
-      <h5>${product.name}</h5>
-      <div style="background-image: url(${product.image})" class="product-image"></div>
-      <div class="product-price">${product.price}</div>
-      <button class="product-button" data-product=${product.id}"">Add to cart</button>
-   </div>
-   `
-});
+// cartArray.forEach(function(product) {
+//    productsContainer.innerHTML +=
+//    `
+//    <div class="product">
+//       <h5>${product.name}</h5>
+//       <div style="background-image: url(${product.image})" class="product-image"></div>
+//       <div class="product-price">${product.price}</div>
+//       <button class="product-button" data-product=${product.id}"">Add to cart</button>
+//    </div>
+//    `
+// });
 
 const buttons = document.querySelectorAll(".buybtn");
 buttons.forEach(function(button) {
@@ -43,7 +43,6 @@ function showCart(cartItems) {
       <div class="cart-item">
          <h6>${cartElement.name}</h6>
          <img src="${cartElement.image}" alt="${cartElement.name}" class="cart-image">
-         <p>${product.price}</p>
       </div>
       `
    })
