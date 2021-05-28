@@ -1,7 +1,7 @@
 import { cartArray } from "./constants/cartList.js";
 console.log(cartArray);
 
-const productsContainer = document.querySelector(".products");
+// const productsContainer = document.querySelector(".products");
 const cart = document.querySelector(".cart");
 const cartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total");
@@ -42,9 +42,11 @@ function showCart(cartItems) {
       `
       <div class="cart-item">
          <h6>${cartElement.name}</h6>
+         <p class="cart-detail">${cartElement.title}</p>
+         <p class="cart-detail-price">${cartElement.price}</p>
          <img src="${cartElement.image}" alt="${cartElement.name}" class="cart-image">
       </div>
       `
    })
-totalContainer.innerHTML = `Total: ${total}`;
+// totalContainer.innerHTML = `Total: ${total}`;
 };
