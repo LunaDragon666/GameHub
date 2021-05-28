@@ -32,7 +32,7 @@ buttons.forEach(function(button){
 });
 
 function showCart(cartItems) {
-   cart.style.display = "block";
+   cart.style.display = "flex";
    cartList.innerHTML = "";
    let total = 0;
    cartItems.forEach(function(cartElement){
