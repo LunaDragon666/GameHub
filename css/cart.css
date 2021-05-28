@@ -8,8 +8,8 @@
   position: fixed;
   right: 0;
   top: 84px;
-  display: block;
-  /* display: none; */
+  /* display: block; */
+  display: none;
 }
 
 .cart-image {
