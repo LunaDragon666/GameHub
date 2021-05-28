@@ -19,4 +19,5 @@ gameList.forEach(game => {
             </div>
         </div>
     `;
+    
 });
