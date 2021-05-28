@@ -43,7 +43,6 @@ function showCart(cartItems) {
       <div class="cart-item">
          <h6>${cartElement.name}</h6>
          <p class="cart-detail">${cartElement.title}</p>
-         <p class="cart-detail-price">${cartElement.price}</p>
          <img src="${cartElement.image}" alt="${cartElement.name}" class="cart-image">
       </div>
       `
